@@ -1,0 +1,89 @@
+// @import '~normalize.css/normalize';
+
+@import './index';
+
+html {
+    box-sizing: border-box;
+    font-size: $root-font-size-small;
+    text-rendering: optimizeLegibility;
+    text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    overflow-y: scroll;
+    color: $c-blue-darkest;
+    font-family: 'Noto Sans', sans-serif;
+    line-height: $root-line-height-normal;
+    text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: normal;
+}
+
+p,
+ul {
+    margin: 0 0 rem-calc(8px);
+}
+
+ul {
+    padding: 0;
+    list-style-position: inside;
+}
+
+button {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    line-height: inherit;
+    cursor: pointer;
+
+    &[disabled] {
+        cursor: default;
+    }
+}
+
+a {
+    color: #2590cd;
+    font-family: 'Noto Sans', sans-serif;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: #1c2832;
+    }
+    &:visited {
+        color: #2590cd;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+b,
+strong {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: normal;
+}

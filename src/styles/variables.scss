@@ -1,0 +1,65 @@
+$breakpoints: (
+    xsmall: 0,
+    small: 576px,
+    medium: 768px,
+    large: 992px,
+    xlarge: 1024px,
+    xxlarge: 1200px
+);
+
+$container-widths: (
+    xsmall: calc(100vw - 24px),
+    small: calc(100vw - 48px),
+    medium: 720px,
+    large: 960px,
+    xlarge: 960px,
+    xxlarge: 1140px
+);
+
+$vertical-breakpoints: (
+    xsmall: 0,
+    verySmall: 425px,
+    small: 620px,
+    medium: 650px,
+    large: 720px,
+    xlarge: 1024px,
+    xxlarge: 1200px
+);
+
+$global-width: 1136px;
+
+$root-font-size: 17px;
+$root-font-size-small: 16px;
+$root-line-height-normal: 1.5;
+$root-line-height-small: 1.1;
+$root-line-height-h1: 1.2;
+$root-line-height-headlines: 1.35;
+
+$button-font-size-primary: 14px;
+$button-font-size-secondary: 12px;
+
+// Color scheme
+$c-maxdome-petrol: #00a3ad; // A-C-1 Maxdome primary / Package section
+$c-gray: #b0b0b0;
+$c-cape-cod: #313232;
+$c-dark-gray: #60686f;
+$c-cool-gray: #f0f0f0; // A-C-6 Background / Foreground (c-gallery)
+$c-white: #fff; // A-C-7 Background / Foreground
+$c-warm-white: #fefefe;
+$c-blue-bayoux: #4e5e6e; // A-C-8 Background / Foreground, Body text
+$c-dark-slate: #152932; // A-C-9 dark-slate
+$c-blue-bayoux-medium: #76818a; // A-C-11
+$c-blue-bayoux-light: #95a2ad; // A-C-12
+$c-red: #f00; // A-C-13 For form errors etc.
+$c-light-gray: #d8d8d8; // A-C-14 Inactive / not selected form elements
+$c-warm-gray: #f1ece9; // A-C-15
+$c-orange: #ec9204; // A-C-16
+$c-pink: #d5225d;
+$c-black: #000; // A-C-17
+$c-silver-chalice: #acacac;
+$c-dark-blue: #1f2b2c;
+$c-warm-green: #248e1c; //success message box
+$c-warm-blue: #346083; // info message box
+$c-almost-red: #cb0000; //error message box
+$c-gray-text: #a6a6a6; // vat info
+$c-blue-darkest: #1c2832; // button group delimeter
