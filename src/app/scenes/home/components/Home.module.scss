@@ -1,0 +1,60 @@
+@import '../../../../styles/index';
+
+.homeContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 445px;
+    height: 275px;
+    background-color: $c-white;
+    color: $c-black;
+    border-radius: 10px;
+    border: 1px solid #eaeaea;
+    padding: 12px;
+}
+
+.homeHeadline {
+  padding: 24px 0 36px 24px;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.eventLinkContainer {
+  padding: 14px 12px 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  color: $c-black;
+  align-items: center;
+  &:hover {
+    background-color: #fafafa;
+  }
+}
+
+.eventTitleContainer {
+  display: flex;
+  flex-direction: column;
+
+  .eventTitle {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 19px; 
+    text-align: left;
+  }
+
+  .eventSubtitle {
+    font-size: 14px;
+    line-height: 19px;
+    text-align: left;
+    color: $c-gray;
+  }
+}
+
+.eventCloseBtn {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+
