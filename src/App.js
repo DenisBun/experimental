@@ -1,26 +1,13 @@
-import React, { Component } from 'react';
-import style from './App.module.scss';
+import React from 'react';
+import { Editor } from './Editor';
 
-class App extends Component {
-  render() {
-    return (
-      <div className={style.App}>
-        <header className={style.AppHeader}>
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <div className="App">
+    <Editor
+      headline={`<h1>Create your event!</h1>
+    <p>Start typing something...</p>`}
+    />
+  </div>
+);
 
 export default App;
