@@ -1,0 +1,62 @@
+.dropzone {
+    border: 1px dashed #7b7b7d;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 26px;
+    height: 44px;
+    &Active {
+        border: 1px dashed blue;
+    }
+    &Accepted {
+        border: 1px dashed green;
+    }
+    &Rejected {
+        border: 1px dashed red;
+    }
+}
+.title {
+    position: absolute;
+    top: 8px;
+    left: 90px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.select {
+    cursor: pointer;
+    color: #2590cd;
+}
+
+.thumbsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 16;
+}
+
+.thumb {
+    display: inline-flex;
+    border-radius: 2;
+    border: 1px solid #eaeaea;
+    margin-bottom: 8;
+    margin-right: 8;
+    width: 100px;
+    height: 100px;
+    padding: 4;
+    box-sizing: border-box;
+}
+
+.thumbInner {
+    display: flex;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.img {
+    display: block;
+    width: auto;
+    height: 100%;
+}

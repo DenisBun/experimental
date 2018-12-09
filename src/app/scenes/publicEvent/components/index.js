@@ -1,1 +1,1 @@
-export { default as PublicEvent } from './PublicEvent';
+export { default as PublicEventContainer } from './PublicEventContainer';

@@ -1,0 +1,56 @@
+@import '../../../../styles/index';
+
+.PublicEventContainer {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 495px;
+    height: 1155px;
+    border-radius: 20px;
+    border: 1px solid #eaeaea;
+    padding: 35px 85px 46px 85px;
+}
+
+.PublicEventHeadlineContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.PublicEventHeadline {
+    font-style: normal;
+    font-weight: bold;
+    line-height: 18px;
+    font-size: 26px;
+    color: #090909;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.PublicEventTitleContainer {
+    margin-top: 38px;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.PublicEventPosterContainer {
+    margin-top: 28px;
+    height: 84px;
+    padding-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titleField {
+    font-style: normal;
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.isRequired {
+    color: red;
+}

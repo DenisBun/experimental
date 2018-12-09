@@ -1,0 +1,32 @@
+:focus {
+    outline: none;
+}
+
+.InputWrapper {
+    position: relative;
+} /* necessary to give position: relative to parent. */
+
+.Input {
+    font-size: 15px/24px;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    border: 0;
+    padding: 7px 0;
+    border-bottom: 1px solid #ccc;
+
+    & ~ .focusBorder {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #090909;
+        transition: 0.4s;
+    }
+
+    &:focus ~ .focusBorder {
+        width: 100%;
+        transition: 0.4s;
+    }
+}
