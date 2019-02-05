@@ -3,7 +3,7 @@ import { default as NativeDropzone } from 'react-dropzone';
 
 import style from './Dropzone.module.scss';
 
-class Dropzone extends React.Component {
+class Dropzone extends React.PureComponent {
     state = {
         accepted: [], // File https://developer.mozilla.org/en-US/docs/Web/API/File
         rejected: [],
@@ -13,11 +13,13 @@ class Dropzone extends React.Component {
 
     componentWillUnmount = () => {
         // Make sure to revoke the data uris to avoid memory leaks
-        this.state.files.forEach(f => URL.revokeObjectURL(f.preview));
+        if (this.state.accepted.length > 0) {
+            this.state.accepted.forEach(f => URL.revokeObjectURL(f.preview));
+        }
     };
 
     render() {
-        console.log(this.state.accepted);
+        // console.log(this.state.accepted);
         const { rejected } = this.state;
         return (
             <NativeDropzone

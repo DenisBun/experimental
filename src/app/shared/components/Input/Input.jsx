@@ -15,18 +15,31 @@ const defaultProps = {
     onBlur: null,
 };
 
-const Input = ({ value, onChange, placeholder, onBlur }) => {
+const Input = ({
+    value,
+    onChange,
+    placeholder,
+    onBlur,
+    headline,
+    isRequired,
+}) => {
     return (
-        <div className={style.InputWrapper}>
-            <input
-                value={value}
-                onChange={onChange}
-                onBlur={onBlur}
-                className={style.Input}
-                type="text"
-                placeholder={placeholder}
-            />
-            <span className={style.focusBorder} />
+        <div className={style.inputContainer}>
+            <div className={style.headline}>
+                {headline}
+                {isRequired && <span className={style.isRequired}>*</span>}
+            </div>
+            <div className={style.InputWrapper}>
+                <input
+                    value={value}
+                    onChange={(e) => onChange(e, 'required.title')}
+                    onBlur={onBlur}
+                    className={style.Input}
+                    type="text"
+                    placeholder={placeholder}
+                />
+                <span className={style.focusBorder} />
+            </div>
         </div>
     );
 };

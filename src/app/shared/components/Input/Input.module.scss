@@ -2,6 +2,25 @@
     outline: none;
 }
 
+.inputContainer {
+    margin-top: 38px;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.headline {
+    font-style: normal;
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.isRequired {
+    color: red;
+}
+
 .InputWrapper {
     position: relative;
 } /* necessary to give position: relative to parent. */
